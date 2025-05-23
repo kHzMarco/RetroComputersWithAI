@@ -39,6 +39,9 @@ Memory(SDRAM)	512MB/1GB DDR3 (Shared with GPU）
 #### Operative system
 
 According to the specs. ARMbian could be an operative system.
+However, there is a debian server image on the website, maybe this could work.
+
+Downloaded but not tested. No idea of how to install yet...
 
 ### RS232 adapters
 
