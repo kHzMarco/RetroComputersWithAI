@@ -28,5 +28,14 @@ Old PC > RS232 > USB to RS232 > Orange Pi Zero 2 (1GB ram) > Internet > AI tool.
 
 ## Challenges
 
-Need to run a very small linux distro.
-Need to find the chat tools that can be used.
+### The SBC computer
+
+#### HW Specs
+
+CPU 	Allwinner H616 64-bit high-performance Quad-core Cortex-A53 processor
+GPU 	• Mali G31 MP2
+Memory(SDRAM) 	512MB/1GB DDR3 (Shared with GPU）
+
+#### Operative system
+
+According to the specs. ARMbian could be an operative system.
