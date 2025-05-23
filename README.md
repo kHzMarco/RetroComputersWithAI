@@ -39,3 +39,14 @@ Memory(SDRAM)	512MB/1GB DDR3 (Shared with GPU）
 #### Operative system
 
 According to the specs. ARMbian could be an operative system.
+
+### RS232 adapters
+
+I have 2 USB to Rs232 cables, and a null modulation cable.
+I've performed a test in linux, and everything worked fine.
+
+Notes: In linux, remember the following
+
+ - To add the cuurrent user to the dial up group.
+ - You can use picocom to perform a test by executing
+   picocom -b 9600 /dev/ttyUSB1
