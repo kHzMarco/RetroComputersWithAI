@@ -19,8 +19,14 @@ Technological limitations make virtually impossible to just plug an ethernet cab
 Old computers have:
 RS232, or USB, software like hyperterminal.
 
-Raspberry Pi has, USB, ethernet/wifi, modern linux. internet connectivity etc.
+single board computers has, USB, ethernet/wifi, modern linux. internet connectivity etc.
+No GUI is needed on the SBC, as there are now software tools that allow the user to interact with AI in text-only
 
 ## Main concept
 
-Old PC > RS232 > USB to RS232 > RaspberryPi > Internet > AI tool.
+Old PC > RS232 > USB to RS232 > Orange Pi Zero 2 (1GB ram) > Internet > AI tool.
+
+## Challenges
+
+Need to run a very small linux distro.
+Need to find the chat tools that can be used.
