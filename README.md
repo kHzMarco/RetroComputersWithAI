@@ -1,5 +1,5 @@
 # RetroComputersWithAI
-Bring the AI wisdom to retro computers
+A guide to Bring the AI wisdom to retro computers
 
 ## Introduction
 
