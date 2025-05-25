@@ -50,7 +50,16 @@ In my case, i used debian. I used the one included in the orange pi zero webpage
 
 So go and install the distro.
 
-In my case, i had to only download the *.img file, and use a tool like balena etcher to write the system directly to a microSD card. Inserted the card on the orange pi, and the system was running.
+In my case, i had to perform the following:
+
+1. Download the ***.img** file from the website
+2. Download and use a tool called Balena etcher (https://etcher.balena.io/)
+3. write the system directly to a microSD card
+4. Insert the card on the SBC (my orange pi)
+5. The system was running.
+
+**Important note:** Pay much attention to the current user names and passwords.
+In my case, the user was already preconfigured in the image. The user name was **orangepi** and the password was **orangepi**. This user has admin permissions, so nothing had to be configured.
 
 ### 2. Add the current user to the dialout group (under construction 🚧)
 
@@ -70,7 +79,9 @@ groups "$USER"
 
 You should see dialout listed among your groups.
 
-### 3. Installing minicom to test the serial communication (under construction 🚧)
+### 3. (optional) Installing minicom to test the serial communication (under construction 🚧)
+
+You can test both devices, up to this point no gpt magic functionality is present. but it is good to test if both devices are ready, or if the hardware already works. This is highly recommended.
 
 ### 4. Install tgpt (under construction 🚧)
 
