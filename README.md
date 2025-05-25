@@ -10,7 +10,7 @@ The idea is to provide retrocomputers (e.g. MS-DOS, windows 98 PCs) access to a 
 
 ## Screenshots
 
-![AI running in the terminal](/screenshots/w98neofetch.jpg "AI running on hyperterminal")
+![AI running in the terminal](/screenshots/w98AIdemo.jpg "AI running on hyperterminal")
 ![Wikipedia running in the terminal](/screenshots/w98wiki.jpg "Wikipedia running in the terminal")
 ![information of the SBC](/screenshots/w98neofetch.jpg "information of the SBC")
 ![links terminal web browser](/screenshots/w98asciicats.jpg "links terminal web browser")
