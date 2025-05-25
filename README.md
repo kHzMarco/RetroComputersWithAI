@@ -54,6 +54,22 @@ In my case, i had to only download the *.img file, and use a tool like balena et
 
 ### 2. Add the current user to the dialout group (under construction 🚧)
 
+An important part to be able to user serial communications, is to add the current user to the dialout group. 
+
+```Bash
+sudo usermod -a -G dialout "$USER"
+```
+
+The **$USER** variable automatically expands to your current username, so you don't have to type it out. Quoting "$USER" is good practice to prevent issues if your username ever contains spaces (though this is rare in Linux usernames).
+
+to verify the changes were applied corrrectly, run the command
+
+```bash
+groups "$USER"
+```
+
+You should see dialout listed among your groups.
+
 ### 3. Installing minicom to test the serial communication (under construction 🚧)
 
 ### 4. Install tgpt (under construction 🚧)
