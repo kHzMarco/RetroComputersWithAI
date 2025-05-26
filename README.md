@@ -99,12 +99,26 @@ sudo apt-get install minicom
 ```bash
 minicom -s
 ```
-if everything is correct, then you shall see the following menu
+if everything is correct, then you shall see the following menu:
 
-select serial port setup and the following screen shall appear
+![minicom settings menu](/screenshots/minicom settings.jpg "minicom settings menu")
 
+select serial port setup and the following screen shall appear:
+
+![minicom port settings](/screenshots/minicomportsettings.jpg "minicom port settings")
+
+when you finish the configurations, hit enter, then you will be redirected to the previous menu.
+Select **Exit**  (Exit from the menu, not exit from minicom)
+
+Then you should see the following:
+
+![minicom screen](/screenshots/minicomscreen.jpg "minicom screen")
+
+In the other side (the other computer or device) you shall see a basic connection, at least what you write in one side, shall be seen on the other side.
 
 ### 4. Install tgpt (under construction 🚧)
+
+
 
 ### 5. Configure agetty (under construction 🚧)
 
