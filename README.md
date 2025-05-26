@@ -85,9 +85,24 @@ You should see dialout listed among your groups.
 Screenshot of the dialout configuration:
 ![Dialout configuration](/screenshots/dialoutuser.jpg "Dialout configuration")
 
-### 3. (optional) Installing minicom to test the serial communication (under construction 🚧)
+### 3. (optional) Installing minicom to test the serial communication (under construction)
 
 You can test both devices, up to this point no gpt magic functionality is present. but it is good to test if both devices are ready, or if the hardware already works. This is highly recommended.
+
+This step is performed on the SBC, but you can also do it in another computer just to test the cables.
+
+1. install minicom (as i am in debian i have to run)
+```bash
+sudo apt-get install minicom
+```
+2. run minicom
+```bash
+minicom -s
+```
+if everything is correct, then you shall see the following menu
+
+select serial port setup and the following screen shall appear
+
 
 ### 4. Install tgpt (under construction 🚧)
 
