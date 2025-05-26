@@ -85,7 +85,7 @@ You should see dialout listed among your groups.
 Screenshot of the dialout configuration:
 ![Dialout configuration](/screenshots/dialoutuser.jpg "Dialout configuration")
 
-### 3. (optional) Installing minicom to test the serial communication (under construction)
+### 3. (optional) Installing minicom to test the serial communication
 
 You can test both devices, up to this point no gpt magic functionality is present. but it is good to test if both devices are ready, or if the hardware already works. This is highly recommended.
 
@@ -116,9 +116,18 @@ Then you should see the following:
 
 In the other side (the other computer or device) you shall see a basic connection, at least what you write in one side, shall be seen on the other side.
 
-### 4. Install tgpt (under construction 🚧)
+### 4. Install tgpt on the SBC (under construction 🚧)
+
+This step is pretty simple, it is fully documented on the developer website, but it is almost like magic, what i only did is to run this on the terminal
+
+```bash
+curl -sSL https://raw.githubusercontent.com/aandrew-me/tgpt/main/install | bash -s /usr/local/bin
+```
+
+The screenshots will be from another computer, but it shall reflect the same experience
 
 
+to test it you can 
 
 ### 5. Configure agetty (under construction 🚧)
 
