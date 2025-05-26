@@ -61,6 +61,9 @@ In my case, i had to perform the following:
 **Important note:** Pay much attention to the current user names and passwords.
 In my case, the user was already preconfigured in the image. The user name was **orangepi** and the password was **orangepi**. This user has admin permissions, so nothing had to be configured.
 
+Screenshot of the orangepi running
+![OrangePi running](/screenshots/OrangepiBoot.jpg "OrangePi running")
+
 ### 2. Add the current user to the dialout group (under construction 🚧)
 
 An important part to be able to user serial communications, is to add the current user to the dialout group. 
@@ -78,6 +81,9 @@ groups "$USER"
 ```
 
 You should see dialout listed among your groups.
+
+Screenshot of the dialout configuration:
+![Dialout configuration](/screenshots/dialoutuser.jpg "Dialout configuration")
 
 ### 3. (optional) Installing minicom to test the serial communication (under construction 🚧)
 
