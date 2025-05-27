@@ -131,18 +131,21 @@ The screenshots is from another computer, but it is the same on the SBC
 
 ![tgptinstallation](/screenshots/tgptinstall.jpg "tgpt installation")
 
-the usage is very simple, and I recommend you to use **tgpt** iin combination with the linux command **less**
-this allows the user to scroll text when responses are long.
+the usage is very simple, and I recommend you to use **tgpt** in combination with the linux command **less**.
+This allows the user to scroll text when responses are long.
 
 ```bash
 tgpt "your question here" | less
 ```
 Note: I recommend you to write the quotation marks.
 
+Example:
 ![aiquestion](/screenshots/aiquestion.jpg "Question for the AI")
 
 ![airesponse](/screenshots/airesponse.jpg "Response from the AI")
 
+You can scroll with the keyboard using the arrow keys.
+**Press Q to quit scrolling** and return to the terminal.
 
 ### 5. Configure agetty (under construction 🚧)
 
