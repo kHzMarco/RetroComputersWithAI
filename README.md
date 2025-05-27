@@ -1,5 +1,5 @@
 # RetroComputersWithAI
-A guide to Bring the AI wisdom to retro computers
+A guide to Bring the AI wisdom to retro computers. (plus other stuff like web-text browsing)
 
 ## Introduction
 
@@ -7,6 +7,8 @@ AI tools provides the users to have super powers in terms of wisdom.
 For example, if the user does not know which are the commands to perform a partitioning to a hard disk, the AI can assist the user, provide the correct commands, plus giving explanation about all the involved steps.
 
 The idea is to provide retro-computers (e.g. MS-DOS, windows 98 PCs) access to a modern AI tools and some basic text web browsing experience
+
+This also allows the retro computer to navigate on the internet in basic text mode, and to visit bulletin board system (BBS).
 
 ## Screenshots from my win98 laptop
 
