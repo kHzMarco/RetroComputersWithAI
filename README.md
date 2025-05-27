@@ -64,7 +64,7 @@ In my case, the user was already preconfigured in the image. The user name was *
 Screenshot of the orangepi running
 ![OrangePi running](/screenshots/OrangepiBoot.jpg "OrangePi running")
 
-### 2. Add the current user to the dialout group (under construction 🚧)
+### 2. Add the current user to the dialout group
 
 An important part to be able to user serial communications, is to add the current user to the dialout group. 
 
@@ -124,7 +124,9 @@ This step is pretty simple, it is fully documented on the developer website, but
 curl -sSL https://raw.githubusercontent.com/aandrew-me/tgpt/main/install | bash -s /usr/local/bin
 ```
 
-The screenshots will be from another computer, but it shall reflect the same experience
+The screenshots is from another computer, but it is the same on the SBC
+
+![tgptinstallation](/screenshots/tgptinstall.jpg "tgpt installation")
 
 
 to test it you can 
