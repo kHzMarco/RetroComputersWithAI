@@ -61,7 +61,8 @@ In my case, i had to perform the following:
 **Important note:** Pay much attention to the current user names and passwords.
 In my case, the user was already preconfigured in the image. The user name was **orangepi** and the password was **orangepi**. This user has admin permissions, so nothing had to be configured.
 
-Screenshot of the orangepi running
+Screenshot of the orangepi running:
+
 ![OrangePi running](/screenshots/OrangepiBoot.jpg "OrangePi running")
 
 ### 2. Add the current user to the dialout group
@@ -116,7 +117,7 @@ Then you should see the following:
 
 In the other side (the other computer or device) you shall see a basic connection, at least what you write in one side, shall be seen on the other side.
 
-### 4. Install tgpt on the SBC (under construction 🚧)
+### 4. Install tgpt on the SBC
 
 This step is pretty simple, it is fully documented on the developer website, but it is almost like magic, what i only did is to run this on the terminal
 
@@ -128,8 +129,18 @@ The screenshots is from another computer, but it is the same on the SBC
 
 ![tgptinstallation](/screenshots/tgptinstall.jpg "tgpt installation")
 
+the usage is very simple, and I recommend you to use **tgpt** iin combination with the linux command **less**
+this allows the user to scroll text when responses are long.
 
-to test it you can 
+```bash
+tgpt "your question here" | less
+```
+Note: I recommend you to write the quotation marks.
+
+![aiquestion](/screenshots/aiquestion.jpg "Question for the AI")
+
+![airesponse](/screenshots/airesponse.jpg "Response from the AI")
+
 
 ### 5. Configure agetty (under construction 🚧)
 
