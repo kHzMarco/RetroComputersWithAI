@@ -152,7 +152,92 @@ You can scroll with the keyboard using the arrow keys.
 Linux distributions allow to perform remote connections directly to a tty interface.
 For simplicity **SSH is not going to be used**. The connection to the single board computer will be then a simple serial connection.
 
+#### Configure agetty via systemd
 
+Modern Linux distributions use systemd to manage services. We will create a systemd service unit for agetty to manage the serial login.
+
+Create a systemd service file:
+We'll create a service file specifically for ttyUSB0 (this is the USB to Serial cable)
+
+```Bash
+sudo nano /etc/systemd/system/serial-getty@ttyUSB0.service
+```
+
+Paste the following content into the file. Adjust ExecStart if you need a different baud rate (e.g., 115200 is common).
+Ini, TOML
+
+```
+[Unit]
+Description=Serial Getty on %I
+Documentation=man:agetty(8)
+BindsTo=dev-%i.device
+After=dev-%i.device systemd-user-sessions.service plymouth-quit.service
+Before=getty.target
+IgnoreOnIsolate=yes
+
+[Service]
+ExecStart=-/sbin/agetty --autologin your_username --keep-baud 115200 %I $TERM
+Type=idle
+Restart=always
+RestartSec=0
+UtmpIdentifier=%I
+TTYVTDisallocate=yes
+StandardInput=tty
+StandardOutput=tty
+# This is important to ensure agetty can prompt for username/password
+# even if stdin/stdout are redirected.
+# It ensures the terminal remains in raw mode until login.
+TTYReset=yes
+
+[Install]
+WantedBy=getty.target
+```
+
+Important Considerations:
+
+Replace your_username with the actual username you want to automatically log in as. For example, if your user is orangepi, use 
+**--autologin orangepi**
+
+**--keep-baud**
+tells agetty to try and maintain the baud rate set by the connecting terminal, but 115200 is explicitly set as a fallback.
+
+**%I**
+is a systemd specifier that will be replaced by ttyUSB0 when the service is enabled.
+
+**TTYReset=yes**
+is crucial for proper terminal behavior over serial.
+
+Save and exit nano (Ctrl+O, Enter, Ctrl+X).
+
+Reload systemd daemon:
+
+```Bash
+sudo systemctl daemon-reload
+```
+
+Enable the service:
+
+This creates a symlink so systemd knows to start this service on boot.
+
+```Bash
+sudo systemctl enable serial-getty@ttyUSB0.service
+```
+
+Start the service immediately:
+
+To test without rebooting, start the service now.
+
+```Bash
+sudo systemctl start serial-getty@ttyUSB0.service
+```
+
+Check the service status:
+
+```Bash
+sudo systemctl status serial-getty@ttyUSB0.service
+```
+
+You should see output indicating it's "active (running)".
 
 
 ## Retro computer tips
